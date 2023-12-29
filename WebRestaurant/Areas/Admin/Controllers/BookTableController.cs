@@ -48,7 +48,7 @@ namespace WebRestaurant.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            List<BookTable> booktables = _unitOfWork.BookTable.GetAll().ToList();
+            List<BookTable> booktables = _unitOfWork.BookTable.GetAll().OrderByDescending(x=>x.CreateDate).ToList();
             return Json(new { data = booktables });
         }
         [HttpDelete]

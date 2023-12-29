@@ -23,10 +23,7 @@
                     </div>
                 </div>
                 <a class="col-lg-4 text-right" asp-action="Create" asp-controller="Category" asp-area="Admin">
-                    <botton class="btn btn-primary">
-                        <i class="anticon anticon-plus-circle m-r-5"></i>
-                        <span>Thêm danh mục</span>
-                    </botton>
+           
                 </a>
             </div>
             <div class="table-responsive">
@@ -62,7 +59,7 @@
                 'autoWidth': false,
                 'lengChange': false,
                 'bordering': false,
-                "ajax": { url: '/booktable/getall' },
+                "ajax": { url: '/admin/booktable/getall' },
                 "columns": [
                     { data: 'name', "width": "20%" },
                     { data: 'phoneNumber', "width": "15%" },
