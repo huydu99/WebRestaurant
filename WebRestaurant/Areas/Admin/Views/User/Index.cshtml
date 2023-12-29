@@ -28,6 +28,7 @@
                         <tr>
                             <th>Họ</th>
                             <th>Tên</th>
+                            <th>Tài khoản</th>
                             <th>Email</th>
                             <th>Số điện thoại</th>
                             <th>Phân quyền</th>
@@ -58,8 +59,9 @@
                 'bordering': false,
                 "ajax": { url: '/admin/user/getall' },
                 "columns": [
-                    { data: 'firstName', "width": "15%" },
+                    { data: 'firstName', "width": "12%" },
                     { data: 'lastName', "width": "10%" },
+                    { data: 'userName', "width": "10%" },
                     { data: 'email', "width": "15%" },
                     { data: 'phoneNumber', "width": "12%" },
                     { data: 'role', "width": "10%" },
