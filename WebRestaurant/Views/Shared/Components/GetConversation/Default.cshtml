@@ -1,5 +1,5 @@
 ﻿@model List<Conversation>
-@foreach (var item in Model)
+@foreach (var item in Model.Where(x=>x.Messages.Count > 0))
 {
     <a class="chat-list-item p-h-25" asp-action="GetUser" asp-controller="Chat" asp-route-conversationId="@item.Id">
         <div class="media align-items-center">

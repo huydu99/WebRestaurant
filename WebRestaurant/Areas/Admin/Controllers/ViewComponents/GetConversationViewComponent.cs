@@ -12,7 +12,7 @@ namespace WebRestaurant.Areas.Admin.Controllers.ViewComponents
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var conversations = _unitOfWork.Conversation.GetAll();
+            var conversations = _unitOfWork.Conversation.GetAll(includeProperties:"Messages");
             return View(conversations);
         }
     }
