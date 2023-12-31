@@ -52,7 +52,7 @@ namespace WebRestaurant.Areas.Admin.Controllers
             }
             _unitOfWork.Blog.Add(blog);
             _unitOfWork.Save();
-            _notyf.Success("Tạp Blog thành công");
+            _notyf.Success("Tạo Blog thành công");
             return RedirectToAction("Index");
         }
 

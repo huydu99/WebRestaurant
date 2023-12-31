@@ -41,7 +41,7 @@ namespace WebRestaurant.Areas.Admin.Controllers
             }
             _unitOfWork.Category.Add(category);
             _unitOfWork.Save();
-            _notyf.Success("Tạp danh mục thành công");
+            _notyf.Success("Tạo danh mục thành công");
             return RedirectToAction("Index");
         }
 
