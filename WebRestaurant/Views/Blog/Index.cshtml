@@ -26,7 +26,7 @@
 					<a asp-route-id="@item.Id" asp-action="Details" asp-controller="Blog">
 						<div class="featured">
 							<div class="featured-img featured-img-2">
-								<img src="@item.ImageUrl" style="max-width: 100%" />
+								<img src=@Url.Content("" + @item.ImageUrl) style="max-width: 100%" />
 								<div class="title-config">@item.Title</div>
 								<div><span>@item.ShortDescription</span></div>
 							</div>
